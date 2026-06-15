@@ -18,6 +18,13 @@ export default {
     try {
       
       if (message.author.bot || !message.guild) return;
+if (msg === 'chào') {
+        await message.reply('anh đang nứng lắm đúng hong anh , ib bạn vẻn để nhét cây láp vô nha á á');
+      }
+
+      if (msg.includes('bot')) {
+        await message.reply('Mình đang nghe đây 😄');
+      }
 
       await handleLeveling(message, client);
     } catch (error) {
